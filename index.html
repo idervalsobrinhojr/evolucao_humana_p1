@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <!-- Esta linha é mágica: ela faz o site se adaptar a telas pequenas (celular) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página de Evolução Humana</title>
+    <style>
+        /* É aqui dentro que vamos colocar a "maquiagem" (CSS) da página:
+           cores, tamanhos e tipos de fonte. */
+
+        body {
+            /* Fonte geral da página, pensada para ser limpa e legível no celular */
+            font-family: 'Arial', Helvetica, sans-serif;
+            line-height: 1.6; /* Espaço entre as linhas para não ficar apertado */
+            margin: 20px;      /* Espaço nas bordas da página */
+            background-color: #f9f9f9; /* Um fundo bem clarinho */
+            color: #333;        /* Cor do texto, um cinza escuro que não cansa a vista */
+        }
+
+        /* Estilizando o TÍTULO PRINCIPAL (h1) */
+        h1 {
+            font-family: 'Georgia', 'Times New Roman', serif; /* Fonte diferente, com serifa, mais elegante */
+            font-size: 2.2em;    /* Tamanho grande, adaptável */
+            color: #1a3e4c;       /* Azul escuro bonito */
+            text-align: center;   /* Centraliza o título */
+            border-bottom: 2px solid #4a7c8c; /* Uma linha decorativa embaixo */
+            padding-bottom: 10px;
+        }
+
+        /* Estilizando os SUBTÍTULOS (h2) - para organizar o texto */
+        h2 {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #2c5a6e;
+            font-size: 1.5em;
+            margin-top: 25px;
+        }
+
+        /* Estilizando o texto dos PARÁGRAFOS (p) */
+        p {
+            font-family: 'Arial', Helvetica, sans-serif;
+            font-size: 1.1em;    /* Tamanho confortável para leitura */
+            text-align: justify;  /* Deixa o texto com as bordas alinhadas */
+            margin-bottom: 20px;
+        }
+
+        /* Configuração para as IMAGENS ficarem responsivas (nunca estourarem a tela) */
+        img {
+            max-width: 100%;      /* Imagem nunca será maior que a tela */
+            height: auto;         /* Mantém a proporção original */
+            display: block;       /* Evita problemas de espaçamento */
+            margin: 20px auto;    /* Centraliza a imagem na página */
+            border-radius: 8px;   /* Borda levemente arredondada (opcional) */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Uma sombra suave (opcional) */
+        }
+
+        /* Um estilo simples para o rodapé */
+        .rodape {
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 40px;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🌍 Jornada da Evolução Humana</h1>
+
+    <!-- Este é o seu resumo de 8 linhas. O <p> significa "parágrafo" -->
+    <p>
+        A história da evolução humana é uma longa jornada de milhões de anos, marcada por adaptações e inovações.
+        Tudo começou na África, com nossos primeiros ancestrais bípedes, os Australopithecus.
+        Com o tempo, o gênero Homo surgiu, desenvolvendo cérebros maiores e as primeiras ferramentas de pedra.
+        Espécies como o Homo habilis e o Homo erectus dominaram o fogo e se espalharam pelo mundo.
+        Na Europa e Ásia, viviam os Neandertais, adaptados ao frio.
+        Finalmente, o Homo sapiens, nossa espécie, desenvolveu a linguagem complexa e a arte.
+        Esta página é um tributo a essa incrível história, que podemos explorar com a ajuda da tecnologia 3D.
+        Abaixo, você pode ver e interagir com um dos nossos famosos ancestrais.
+    </p>
+
+    <!-- ESPAÇO PARA INSERIR AS FIGURAS: você pode colocar quantas quiser aqui -->
+    <h2>Fóssil Interativo: "Lucy" (Australopithecus)</h2>
+
+    <!--
+        ********************************************************************
+        É AQUI QUE VOCÊ VAI COLAR O CÓDIGO DO MODELO 3D (O IFRAME)
+        QUE APRENDEU NO PASSO ANTERIOR (DA RESPOSTA SOBRE O SMITHSONIAN).
+        ELE SUBSTITUIRÁ ESTE COMENTÁRIO.
+        ********************************************************************
+    -->
+    <!-- Exemplo de como UM iframe do Smithsonian poderia ser colocado: -->
+    <!--
+    <iframe
+        src='https://3d-api.si.edu/voyager/3d_package:341c96cd-f967-4540-8ed1-d3fc56d31f12'
+        width='100%'
+        height='500'
+        allow='xr-spatial-tracking; fullscreen'
+        style='border: 0; border-radius: 8px;'>
+    </iframe>
+    -->
+
+    <!-- Você também pode adicionar uma imagem NORMAL hospedada no GitHub -->
+    <h2>Linha do Tempo Visual</h2>
+    <img src="https://LINK-DA-SUA-IMAGEM-NO-GITHUB.jpg" alt="Descrição da imagem, como 'Linha do tempo da evolução humana'">
+
+    <div class="rodape">
+        Página criada para o GitHub Pages - Conteúdo em constante evolução.
+    </div>
+
+</body>
+</html>
