@@ -36,6 +36,21 @@
             margin-top: 25px;
         }
 
+        /* CONTAINER PRINCIPAL - cria a coluna centralizada */
+.container {
+    max-width: 800px;    /* Largura máxima do texto (ajuste como preferir) */
+    margin: 0 auto;      /* Centraliza horizontalmente */
+    padding: 0 20px;     /* Espaçamento interno nas laterais para telas pequenas */
+    width: 100%;         /* Ocupa 100% até atingir max-width */
+}
+
+/* Opcional: ajuste para telas muito grandes */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 900px;  /* Um pouco mais largo em telas grandes */
+    }
+}
+
         /* Estilizando o texto dos PARÁGRAFOS (p) */
         p {
             font-family: 'Arial', Helvetica, sans-serif;
@@ -66,7 +81,7 @@
     </style>
 </head>
 <body>
-
+  <div class="container">
     <h1>Paleoanthropology</h1>
 
     <!-- Este é o seu resumo de 8 linhas. O <p> significa "parágrafo" -->
@@ -113,6 +128,6 @@
     <div class="rodape">
         Página criada para o GitHub Pages - Conteúdo em constante evolução.
     </div>
-
+  </div>
 </body>
 </html>
